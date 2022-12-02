@@ -37,11 +37,28 @@ Different methods for retrieving data from a specified URL are defined in this p
  | HEAD	   |  Same as GET method, but no response body.|
  | PUT	   |  Replace all current representations of the target resource with uploaded content. |
  | DELETE	 |  Deletes all current representations of the target resource given by the URL. |
+ 
+ 
+###  create home.html
+
+      <html>
+         <body>
+            <form action = "/login" method = "post">
+               <p>Enter Name:</p>
+               <p><input type = "text" name = "nm" /></p>
+               <p><input type = "submit" value = "submit" /></p>
+            </form>   
+         </body>
+      </html>
 
 ### create file hello.py 
 
       from flask import Flask, redirect, url_for, request
       app = Flask(__name__)
+      
+      @app.route('/')
+      def home():
+         return render_template('home.html')
 
       @app.route('/success/<name>')
       def success(name):
