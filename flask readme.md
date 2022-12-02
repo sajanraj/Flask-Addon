@@ -12,10 +12,20 @@ Your directory structure for flask should be like:
               /styles
                   - mainpage.css
 
+running flask app
+
+      flask --app hello run
+      
+ if .py file contains main 
+ 
+            if __name__ == '__main__':
+                  app.run()
+  then 
+  
+            python hello.py
 
 
-
-Flask HTTP methods, handle GET & POST requests
+## Flask HTTP methods, handle GET & POST requests
 
 
 Different methods for retrieving data from a specified URL are defined in this protocol. The following table summarizes the different http methods:
@@ -28,6 +38,7 @@ Different methods for retrieving data from a specified URL are defined in this p
  | PUT	   |  Replace all current representations of the target resource with uploaded content. |
  | DELETE	 |  Deletes all current representations of the target resource given by the URL. |
 
+### create file hello.py 
 
       from flask import Flask, redirect, url_for, request
       app = Flask(__name__)
