@@ -1,18 +1,22 @@
-  GNU nano 4.8                                                      hello.py                                                                 
+ GNU nano 4.8                                                                                                                               shell 4.8
 from flask import Flask
 from flask import render_template
+# used for parsing requests from client
+from flask import request
 
 app = Flask(__name__)
 
 #base root 
 @app.route('/')
 def hello_world():
-   return 'Hello World'
+#    return 'Hello World'
+    return render_template('index.html')
 
 #path or url hello
 @app.route('/hello')
 def hello():
     return 'Hello World-path hello'
+
 #url with name as argument to get function
 @app.route('/user/<username>')
 def show_user_profile(username):
@@ -28,8 +32,16 @@ def show_post(username,post_id):
 @app.route('/greeting/<name>')
 def hello_greeting(name=None):
     return render_template('greeting.html', name=name)
-
+# using request methods get and post
+@app.route('/mailsent',methods=['GET','POST'])
+def sentmail():
+    email = request.form.get('email')
+    print('email',email)
+    if email==None:
+        return render_template('mailform.html')
+    else:
+        return render_template('mailsample.html',email=email)
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug = True,host='0.0.0.0')
     
