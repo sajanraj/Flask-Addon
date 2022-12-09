@@ -38,5 +38,5 @@ then create mystyle.css file to import it from a file
 
     </style>
 
-<p class="one">Some text.</p>
-<p class="newcolor">New Colour.</p>
+    <p class="one">Some text.</p>
+    <p class="newcolor">New Colour.</p>
