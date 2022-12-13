@@ -88,7 +88,6 @@ Welcome.html
 
 
         <!DOCTYPE html>
-        <html>
         <head>
         <title>Page Title</title>
         <!-- Add css and header files here -->
