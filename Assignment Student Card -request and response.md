@@ -56,7 +56,6 @@ The HTML document itself begins with \<html\> and ends with \</html\>.
 student.html
 
         <!DOCTYPE html>
-        <html>
         <head>
         <title>Page Title</title>
         <!-- Add css and header files here -->
