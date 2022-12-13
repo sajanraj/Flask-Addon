@@ -52,7 +52,7 @@ Add contents in html page
 
 All HTML documents must start with a document type declaration:
  <!DOCTYPE html>.
-The HTML document itself begins with <html> and ends with </html>.
+The HTML document itself begins with \<html\> and ends with \</html\>.
 student.html
 
         <!DOCTYPE html>
