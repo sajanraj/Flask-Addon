@@ -26,11 +26,11 @@ Create a path/url student in flask app
 
             @app.route('/student',,methods=['GET','POST']) 
             def  student_page_response():
-            if request.method == GET:
-              return render_template('student.html')
-            else:
-              name = request.form[‘fname’]
-              return render_template(welcome.html',name=name)
+             if request.method == GET:
+               return render_template('student.html')
+             else:
+               name = request.form[‘fname’]
+               return render_template(welcome.html',name=name)
 
 
 
@@ -75,6 +75,8 @@ student.html
           <label for="lname">Last name:</label><br>
 
           <input type="text" id="lname" name="lname">
+          
+           <input type="submit" Value='Enter'>
 
         </form>
 
