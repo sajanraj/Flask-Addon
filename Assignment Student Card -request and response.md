@@ -105,9 +105,21 @@ Welcome.html
         
 ### Step 3:
 In cloud console
+            
+            
+            #clone repo from git using
+            $ git clone https://github.com/sajanraj/Flask-Addon.git
             # Run Flask app using
-            cd /Flask-Addon
-            python hello.py
+            $ cd /Flask-Addon
+            $ python hello.py
+ help:-
+ 
+     # To see the directry in your path
+     $ ls
+     # change the current path to the folder listed in your path
+     $ cd dir_name
+     # dir_name- can be either complete path or folder name listed in your current path
+     
 ### Step 3:
 
 Use the web preview and add port 5000 to view page in gcloud platform
