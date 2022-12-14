@@ -143,6 +143,25 @@ In cloud console
 
 Use the web preview and add port 5000 to view page in gcloud platform
 
+# Template tags in html file
+ Template tags and code tags in flask - (This is evaluated in render_template before creating a complete html page before the return statement)
+
+##  For code the tags {% and %} are used.
+##  To display variables, write the tags {{ and }} .
+Eg:
+
+     <html>
+         <head>
+             <title>{{ title }}</title>
+         </head>
+         <body>
+             {% if username %}
+                    <h1>Hello {{ username }}</h1>
+             {% else %}
+                    <h1> Welcome</h1>
+             {% endif %}
+         </body>
+     </html>
 
 
 
