@@ -66,8 +66,9 @@ Dir structure
           …
           hello.py
 
-Add contents in html page 
+Add contents in html5 page 
 
+[Reference](https://www.codeproject.com/Articles/546960/HTML5-Quick-Start-Web-Application)
 All HTML documents must start with a document type declaration:
  <!DOCTYPE html>.
 The HTML document itself begins with \<html\> and ends with \</html\>.
