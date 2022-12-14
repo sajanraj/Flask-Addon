@@ -9,22 +9,40 @@
       Frontend- html,css,js
       Backend -python, Flask
 
-Creating a student card with html page frontend and submit the data to backend server. 
+Creating a student card with html page as frontend and submit the data in form to backend server.
 
 ## ExampleDomain.com/student
 
-
+### (!! Warning - Do not copy paste- text encoding will be different -[ u+0060 \`] - [u+0027 ']- [u+2018 "] )
 ### Step 1:
 Open Editor in cloud console
 
+Using python Flask API for serving web pages.
+
 Add header 
 
+      # Comments starts with a #, and Python will ignore them:
+      # header file to process html request from client 
       from flask import request
+      # header used for importing Flask class
+      from flask import Flask
+      # header used for rendering html page from server side to client
+      from flask import render_template
+      # creating object using flask class
+      app = Flask(__name__)
       
 add path for specifica page in your app's  .py file
 Create a path/url student in flask app
 
-            @app.route('/student',,methods=['GET','POST']) 
+Eg: domain.com/*student*
+ domain.com - This one stands for domain name of the application running in the server
+ 
+ /student - stands for url path
+ 
+ for each path you can serve webpages designed in html.
+
+
+            @app.route('/student',methods=['GET','POST']) 
             def  student_page_response():
              if request.method == GET:
                return render_template('student.html')
@@ -120,7 +138,7 @@ In cloud console
      $ cd dir_name
      # dir_name- can be either complete path or folder name listed in your current path
      
-### Step 3:
+### Step 4:
 
 Use the web preview and add port 5000 to view page in gcloud platform
 
