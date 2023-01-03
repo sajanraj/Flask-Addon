@@ -24,6 +24,7 @@ Ubuntu Terminal
   # python connector for mysql
   
   [Mysql Doc](https://dev.mysql.com/downloads/connector/python/)
+  [Other Examples](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python2_Apps.html)
   Ubuntu Terminal
   
             pip install mysql-connector-python
