@@ -51,3 +51,5 @@ Ubuntu Terminal
               print(err)
           else:
             cnx.close()
+
+Sample mysql python - [Link](https://www.w3schools.com/python/python_mysql_getstarted.asp)
