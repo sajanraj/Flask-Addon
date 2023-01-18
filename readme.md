@@ -23,6 +23,21 @@ https://www.youtube.com/watch?v=vBaY9AgorHk&t=20s
  install specific version using 
   
     pip install flask==2.0.0
+    
+    
+ old Version Ubuntu 16.04
+ 
+     sudo apt update
+     sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+
+     wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+     sudo tar xzf Python-3.7.4.tgz
+
+     cd Python-3.7.4
+
+     sudo ./configure
+     sudo make
+     sudo make install
 
     
     
