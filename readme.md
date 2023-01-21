@@ -25,8 +25,20 @@ https://www.youtube.com/watch?v=vBaY9AgorHk&t=20s
     pip install flask==2.0.0
     
     
- old Version Ubuntu 16.04
+ # old Version Ubuntu 16.04
  
+## Use python from anaconda
+
+[Download](https://www.anaconda.com/)
+ 
+ or 
+ 
+ ### do release update to 18 
+ 
+ (Warning: build from binary file)
+ 
+  last option build from base.
+  
      sudo apt update
      sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
 
